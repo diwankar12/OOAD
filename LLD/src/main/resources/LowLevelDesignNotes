@@ -1,0 +1,23 @@
+Real world converting problem to convert to Noun Verb Technique
+
+objects - nouns
+Behaviour/methods - verbs
+
+Relationship among classes :
+
+has a  - composition/agregation
+is a -  inheritance
+
+When designing classes make sure that the dependencies is minimum (lowering the coupling)
+Abstraction and Encapsulation
+
+
+Single responsibility principle : Use facade pattern
+    Only one class changes should be responsible to only one business stack holders .
+    if they are two more stack holders using the same class, then its disrupt single responsibility principle .
+    We need create separate classes for the functionality instead of putting in same class
+    https://www.youtube.com/watch?v=-T0H--a8WnY&list=PLTCrU9sGybupCpY20eked6blbHI4zZ55k&index=5
+
+
+
+

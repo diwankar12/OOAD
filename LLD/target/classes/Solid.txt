@@ -1,0 +1,30 @@
+------------Single Responsibility Principle--------
+Every class or method should handle single responsibility . This helps
+to maintain loosely coupling .
+
+Interfaces or abstraction are powerful features to achieve this feature .
+Note : A class should have only one reason to change
+
+
+---------------Open/Closed Principle.
+Open for extension but closed for modification for classes
+
+-------------------Liskov Principle ------------
+
+If class B is sub type of class A , then we should be able to replace
+Object of A with B without breaking the behaviour of the program .
+
+Subclass should extend the capability of parent class not narrow
+it down .
+
+----------Interface Segmented -------------
+Interfaces should be such , that client should implement
+unnecessary functions they do not
+
+----------------dependency Inversion ------------
+Class should depend on the interface than the concrete class
+
+
+
+
+

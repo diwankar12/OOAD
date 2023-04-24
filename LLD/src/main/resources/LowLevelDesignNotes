@@ -28,6 +28,8 @@ Single responsibility principle : Use facade pattern
 whenever we want to create different object under some condition , then return
 particular objects .
 
+When we want to group categories then we can use abstract pattern
+
 --------------Builder Pattern(Very Commonly used) -------------------------
 
 Problem :
@@ -60,4 +62,35 @@ These patterns increase flexibility in carrying out the communication
 The Object that are being observed is called subject .
 The objects that are watching and monitoring the state changes are the
 observers or listeners
+
+--------------------Command Pattern----------------
+The aim is to achieve separation of concerns
+We can change at run time .
+
+--------------------iterator pattern ------------------
+
+---------------------template pattern
+
+Template pattern is based on inheritance usually .
+It operates at class level . Template pattern can be replaced by strategy
+pattern .
+
+-------------null object pattern -------------------
+
+
+
+------------------Decorator ------------------------------
+
+To avoid class explosion , we use decorator pattern
+
+
+-------------------Facade ---------------------
+
+When we have to hide the complexity of a system from the client , we use facade
+
+
+
+
+
+
 

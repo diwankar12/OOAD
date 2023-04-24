@@ -1,0 +1,5 @@
+Spring Container (Application Context)
+
+Primary Functions :
+    1. Create and manage functions (Inversion of control)
+    2. Inject Object's dependencies (dependency injection)

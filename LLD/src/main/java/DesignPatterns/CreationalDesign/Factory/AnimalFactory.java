@@ -5,6 +5,7 @@ public class AnimalFactory {
     Animal animal ;
 
     AnimalFactory(Animal animal){
+
         this.animal= animal ;
     }
 

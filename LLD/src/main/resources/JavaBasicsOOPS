@@ -1,0 +1,143 @@
+Access modifiers
+class :
+        public classes : access from anywhere
+        default classes : can be access only in the modifiers
+Class Members :
+        public : any other class can access this class or member
+        protected : classes in the same package and any subclasses
+                    in other PACKAGES to have access to the member
+        default : member is only accessible only to classes in the
+                  same package
+        private : no other class can access this member
+this:
+     this refers is to the instance that was created when the object was
+     instantiated . So "this" is a special reference name for the object or
+     instance , which is used to describe itself .We use this to access
+     field in the class .
+
+constructor chaining :
+      Constructor chaining is when one constructor explicitly calls
+      another overloaded constructor
+      You must use the special statement this() to execute another
+      constructor , passing it arguments if required .
+      And this() , must be first executable statement ,if it's used
+      from another constructor .
+
+reference of an object
+     House redHouse = new House("Red")
+     here, redHouse is a reference and new House("red") is an object
+
+Static and instance variables :
+
+     Static variables , every instance of the class shares the same
+     static variables . so if change is made to that variable ,
+     all other instances of that class will se the effect of that change
+
+Static and Instance methods
+     1.Static methods can't access instance methods
+      and instance variables directly
+     2.They are usually used for operations that don't require
+     any data from an instance of the class .
+     3.So inside a static method we can't use this keyword .
+
+inheritance
+    super() is lot like this() . super calls superclass constructor
+    this has to be first line of code in the subclass constructor
+    If the super does'nt have default constructor , then you must call super()
+    in all of your constructors , passing right arguments to that
+    constructor
+
+this() vs super()
+    use this() to call a constructor from another overloaded constructor
+    in the same class .
+    While super() , is the only way to call a parent constructor .It calls
+    the parent constructor .
+    this and super can't be called in the same constructor .
+=================== code snippet ==========
+    class Shape{
+         int x ;
+         int y ;
+         Shape(int x,int y){
+            int x = x ;
+            int y=y ;
+         }
+    }
+
+    class Rectangle extends Shape{
+      int width;
+      int height ;
+      public Rectangle(int x,int y){
+          this(x,y,0,0); // calls second constructor below
+      }
+       public Rectangle(int x,int y,int width,int height){
+             super(x,y); // calls constructor from parent(Shape class)
+             this.width=width ;
+             this.height=height ;
+         }
+    }
+=============================
+
+Composition :
+    As a general rule , when you are designing programs in java , you
+    probably wants to look at composition first .
+
+    Composition has a relationship
+
+Casting with classes using object and var references
+
+    Remember : Compile time vs runtime
+
+    let's say :
+    Movie movie = Movie.getMovie(type, title);
+
+    here right side will return instance at the run time of Adventure
+
+    Adventure adventure = Movie.getMovie(type, title);
+    But when we tried to assign return type to adventure , it throws an error
+    Because at compile time , Movie.getMovie return movie instance .
+
+    Fix for this :
+    1.
+     Adventure adventure = (Adventure) Movie.getMovie(type, title);
+    2.
+       Object comedyMovie = Movie.getMovie("comedy", title);
+       Comedy comedy = (Comedy) comedyMovie
+       comedy.watchComedyMovie();
+     3.
+     Using var
+       var adventure =  Movie.getMovie(type, title);
+       adventure.watchMovie();
+
+Instance of operator
+
+    The instance of operator lets you test the type of an object or instance
+    The reference variable you are testing is the left operand .
+    The type you are testing is right operand
+
+    unknownObject instanceof Adventure
+
+non static nested class
+     public inner class
+     How to access inner class
+
+     OuterClass outer = new OuterClass();
+     OuterClass.InnerClass inner = outer.new InnerClass();
+
+Marking a class as final can't be extended or implemented
+same goes for method when u make a method final
+
+Static instializer is called first and called first time only
+
+
+
+
+
+
+
+
+
+
+
+
+
+

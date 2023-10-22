@@ -1,0 +1,96 @@
+Real world converting problem to convert to Noun Verb Technique
+
+objects - nouns
+Behaviour/methods - verbs
+
+Relationship among classes :
+
+has a  - composition/agregation
+is a -  inheritance
+
+When designing classes make sure that the dependencies is minimum (lowering the coupling)
+Abstraction and Encapsulation
+
+
+Single responsibility principle : Use facade pattern
+    Only one class changes should be responsible to only one business stack holders .
+    if they are two more stack holders using the same class, then its disrupt single responsibility principle .
+    We need create separate classes for the functionality instead of putting in same class
+    https://www.youtube.com/watch?v=-T0H--a8WnY&list=PLTCrU9sGybupCpY20eked6blbHI4zZ55k&index=5
+
+====================Creational Design pattern ================
+
+------------Singleton Pattern -----------------
+
+
+--------------Factory and Abstract Factory Pattern --------------
+
+whenever we want to create different object under some condition , then return
+particular objects .
+
+When we want to group categories then we can use abstract pattern
+
+--------------Builder Pattern(Very Commonly used) -------------------------
+
+Problem :
+ 1.When we have lot of optional field in a class , we have to create
+one big constructor .
+2.Because of optional field , we have to create of lot of constructors .
+
+Example : StringBuilder
+
+Step by step object creation
+
+---------------Prototype Pattern ------------------------
+
+Promotes cloneable or clone objects
+
+
+==========================Behavioural Pattern ================
+
+In software engineering behavioral design patterns are design patterns
+that identify common communication patterns between objects.
+These patterns increase flexibility in carrying out the communication
+
+
+--------------Strategy Pattern --------------------
+1.favor composition over inheritance
+2. enable selecting algorithm at runtime .
+3. code to interface
+
+----------------Observer Pattern --------------
+The Object that are being observed is called subject .
+The objects that are watching and monitoring the state changes are the
+observers or listeners
+
+--------------------Command Pattern----------------
+The aim is to achieve separation of concerns
+We can change at run time .
+
+--------------------iterator pattern ------------------
+
+---------------------template pattern
+
+Template pattern is based on inheritance usually .
+It operates at class level . Template pattern can be replaced by strategy
+pattern .
+
+-------------null object pattern -------------------
+
+
+
+------------------Decorator ------------------------------
+
+To avoid class explosion , we use decorator pattern
+
+
+-------------------Facade ---------------------
+
+When we have to hide the complexity of a system from the client , we use facade
+
+
+
+
+
+
+
